@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen API Demo</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@1.0.0"
+        }
+      }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <h1>AI Image Generator</h1>
+    <div id="prompt-container">
+        <div id="image-preview-container"></div>
+        <textarea id="prompt-input" rows="3" placeholder="Describe the image you want to create, or upload an image to use as inspiration..."></textarea>
+        <div id="controls">
+            <label for="image-upload" class="upload-btn">Upload Image</label>
+            <input type="file" id="image-upload" accept="image/*" style="display: none;">
+            <button id="generate-btn">Generate Images</button>
+        </div>
+    </div>
+    <div id="image-gallery"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

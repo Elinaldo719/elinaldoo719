@@ -1,0 +1,5 @@
+{
+  "name": "AI Image Generator",
+  "description": "Crie imagens incríveis a partir de descrições em texto.",
+  "requestFramePermissions": []
+}
